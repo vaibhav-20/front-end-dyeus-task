@@ -22,17 +22,22 @@
   --white: #fff;
   -input-color: #e7f6fc;
   --active-btn: #d6f4fb;
-  --box3:#dce9e9;
- --box5:linear-gradient(176.88deg, #F3B8BC 2.58%, #FFDAD4 93.07%);
-  --box6:linear-gradient(270deg, #DADAE4 0.25%, #EEEEF0 24.33%, #F8F8F8 52.08%, #FEFEFE 100%);
-  --box7:#F66E6E;
-  --box8:linear-gradient(180deg, #FFF6FB 0%, #E7F6FC 100%);
+  --box3: #dce9e9;
+  --box5: linear-gradient(176.88deg, #f3b8bc 2.58%, #ffdad4 93.07%);
+  --box6: linear-gradient(
+    270deg,
+    #dadae4 0.25%,
+    #eeeef0 24.33%,
+    #f8f8f8 52.08%,
+    #fefefe 100%
+  );
+  --box7: #f66e6e;
+  --box8: linear-gradient(180deg, #fff6fb 0%, #e7f6fc 100%);
   --footer-bg: #050506;
 }
 
 body {
   min-width: 375px;
-  
 }
 
 .mobile-navbar {
@@ -42,12 +47,11 @@ body {
   box-shadow: 0px 3px 6px rgba(24, 160, 251, 0.12);
   backdrop-filter: blur(4px);
   border-radius: 0px 0px 14px 14px;
-  
 }
-/* Status Bar */
+
+/* ---------> Status Bar <-------------- */
 
 .status-bar {
-  /* background-color: #f0f; */
   height: 40px;
   display: flex;
   justify-content: space-between;
@@ -56,19 +60,18 @@ body {
   padding: 0 0.8em;
 }
 
-/* Time Status */
-
+/* ------------> Time Status <-------------- */
 .time-status p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
   font-family: "SF Pro Display";
-  
+
   color: #000;
   letter-spacing: 0.1em;
   align-self: center;
 }
 
-/* Basic info incon */
+/* ---------> Basic info incon  <-------------*/
 .basic-info .wifi .battery .signal,
 img {
   width: 1.25em;
@@ -91,12 +94,11 @@ img {
   margin: 0 1.25em;
 }
 
-/* About section */
+/* ------------> About section <-------------*/
 
 .about-section {
   width: 100%;
   height: auto;
-  /* background-color: #f0f; */
 }
 
 .first-box .about-title {
@@ -113,26 +115,22 @@ img {
   font-weight: 700;
   font-size: 30px;
   line-height: 40px;
-  margin: 37px 20px 0px 20px;
+  margin: 37px 30px 0px 30px;
 }
 
 .first-box .para-third {
   font-family: "Poppins";
   font-weight: 300;
   font-size: 24px;
-  text-align: justify;
+  text-align: center;
   line-height: 40px;
-  /* margin: 0 37px;
-  margin-top: 37px; */
   margin: 37px 20px 0px 20px;
   color: var(--balck);
 }
 
 .draw-underline {
   border: 1px solid var(--black);
-  /* margin: 0 32px; */
   margin: 26px 20px 0px 20px;
-  /* margin-top: 26px; */
 }
 
 .second-box .our-philosophy {
@@ -152,20 +150,21 @@ img {
   margin: 37px 20px 0px 20px;
 }
 
-/* Para box */
+/* ------------->Paragraph Box <------------ */
 
-.para-box .desc-para-1,.desc-para-2  {
-  font-family: 'DM Sans';
-font-weight: 700;
-font-size: 24px;
-line-height: 40px;
-color: var(--title-color);
+.para-box .desc-para-1,
+.desc-para-2 {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 40px;
+  color: var(--title-color);
   text-align: center;
   margin: 37px 20px 0px 20px;
 }
 
-.content-box p{
-  font-family: 'DM Sans';
+.content-box p {
+  font-family: "DM Sans";
   font-weight: 700;
   font-size: 24px;
   line-height: 40px;
@@ -179,7 +178,6 @@ color: var(--title-color);
 .para-icon-3 {
   display: flex;
   justify-content: center;
-
 }
 .content-box .para-icon-1 img,
 .para-icon-2 img,
@@ -188,7 +186,6 @@ color: var(--title-color);
   height: 70px;
 }
 
-
 .content-box .desc2-para-1,
 .desc2-para-2,
 .desc2-para-3 {
@@ -196,10 +193,10 @@ color: var(--title-color);
   margin-top: 38px;
 }
 .content-box .para-end {
-  text-align: justify;
   margin: 75px 20px;
 }
 
+/* -----------> Container Box-2 <------------ */
 .box-container-2 {
   background: linear-gradient(
     165.41deg,
@@ -212,15 +209,15 @@ color: var(--title-color);
   font-family: "Poppins";
   font-weight: 700;
   font-size: 26px;
-  padding-top: 84px;
+  padding-top: 80px;
   text-align: center;
   color: var(--title-color);
 }
 
 .box-container-2 > p:nth-child(2) {
   font-family: "Reptile";
-  font-weight: 500;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 43px;
   margin-top: 37px;
   color: var(--title-color);
   text-align: center;
@@ -242,94 +239,99 @@ ul {
 }
 
 .description-content ul li {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
-/* Box Container-3 */
+.description-content p:last-child {
+  padding-bottom: 40px;
+}
+
+/* --------> Box Container-3 <---------- */
 .box-container-3 {
-  background:  var(--box3);
+  background: var(--box3);
 }
 
 .box-container-3 .heading {
   font-family: "Poppins";
-  
   font-weight: 700;
   font-size: 30px;
-  line-height: 33px;
-  text-align: justify;
-  padding-top: 39px;
-  margin: 0px 7px 37px 33px;
+  line-height: 40px;
+  padding-top: 49px;
+  margin: 0px 33px 37px 33px;
 }
 
 .box-container-3 .light-title {
   font-family: "Reptile";
-  
   font-weight: 500;
   font-size: 45px;
   color: var(--black);
   text-align: justify;
-  margin: 0px 13px 13px 33px;
+  margin: 0px 33px 13px 33px;
 }
 
 .box-container-3 .paragraph-text {
   font-family: "Poppins";
   font-weight: 300;
-  font-size: 20px;
-  /* line-height: 206.5%; */
+  font-size: 22px;
   line-height: 1.6em;
   color: rgba(0, 0, 0, 0.8);
-  margin: 21px 34px 0px 33px;
+  margin: 21px 33px 0px 33px;
   padding-bottom: 17px;
   text-align: justify;
+  line-height: 40px;
 }
 
-/* Image Container */
+/* ---------> Image Container <------------ */
 
 .image-container {
   background-image: url("images/karolina-grabowska.png");
-  width : 100%;
+  width: 100%;
   height: 562px;
   background-repeat: no-repeat;
   background-size: cover;
- padding-top:16px;
+  padding-top: 16px;
 }
 
-.image-container .upgrade-btn{
+.image-container .upgrade-btn {
   display: flex;
   justify-content: center;
-  background: linear-gradient(297.28deg, #F66E6E 67.01%, rgba(246, 110, 110, 0) 123.71%);
-filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
-border-radius: 70px;
-padding: 18px 45px;
-gap: 10px;
-font-family: 'Poppins';
-flex: none;
-order: 0;
-flex-grow: 0;
-color: var(--white);
-margin: 0 30px;
+  background: linear-gradient(
+    297.28deg,
+    #f66e6e 67.01%,
+    rgba(246, 110, 110, 0) 123.71%
+  );
+  filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
+  border-radius: 70px;
+  padding: 18px 18px;
+  margin: 0 25px;
+  font-family: "Poppins";
+  flex: none;
+  flex-grow: 0;
+  color: var(--white);
 }
 
-/* Container Box -4 */
+/* ------------> Container Box-4 <---------- */
 
-.box-container-4 .upgrade-btn{
+.box-container-4 .upgrade-btn {
   display: flex;
   justify-content: center;
-  background: linear-gradient(288.62deg, #6E8CF6 42.36%, rgba(110, 213, 246, 0.93) 115.74%);
+  background: linear-gradient(
+    288.62deg,
+    #6e8cf6 42.36%,
+    rgba(110, 213, 246, 0.93) 115.74%
+  );
   box-shadow: 0px 2px 16px rgba(71, 222, 255, 0.33);
   border-radius: 70px;
-padding: 18px 45px;
-gap: 10px;
-margin: 0 30px;
-font-family: 'Poppins';
-flex: none;
-order: 0;
-flex-grow: 0;
-color: var(--white);
+  padding: 18px 18px;
+  margin: 0 25px;
+  font-family: "Poppins";
+  flex: none;
+  flex-grow: 0;
+  color: var(--white);
 }
+
 .box-container-4 .heading {
-  font-family: 'Reptile';
-  
+  font-family: "Reptile";
   font-weight: 700;
   font-size: 30px;
   line-height: 33px;
@@ -338,11 +340,9 @@ color: var(--white);
   margin: 0px 7px 37px 33px;
 }
 
-
-.box-container-4 .paragraph-text
-{
+.box-container-4 .paragraph-text {
   font-family: "Poppins";
-  
+
   font-weight: 300;
   font-size: 20px;
   line-height: 1.6em;
@@ -352,38 +352,37 @@ color: var(--white);
   text-align: justify;
 }
 
-/* Image grid */
+/* ---------> Image Grid Container <--------- */
 
-.box-container-4  .image-grid{
-    display: flex;
-    justify-content: center;
-    gap:10px;
-    flex-wrap: wrap;
-    margin: 35px 0px;
+.box-container-4 .image-grid {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 35px 0px;
 }
-.image-grid div img{
+.image-grid div img {
   width: 164px;
   height: 164px;
 }
 
-/* Box Container - 5 */
+/* ----------> Box Container-5 <----------- */
 
-.box-container-5{
-  background: var(--box5)
+.box-container-5 {
+  background: var(--box5);
 }
 
 .box-container-5 .heading {
-  font-family: 'Reptile';
+  font-family: "Reptile";
   font-weight: 700;
   font-size: 40px;
   padding-top: 39px;
   margin: 0px 7px 37px 33px;
 }
 
-
 .box-container-5 .paragraph-text {
   font-family: "Poppins";
-  
+
   font-weight: 300;
   font-size: 20px;
   line-height: 1.6em;
@@ -393,47 +392,47 @@ color: var(--white);
   text-align: justify;
 }
 
-/* Image Container */
+/* ---------> Image Container <------------ */
 
 .box-container-5 .image-container {
   background-image: url("images/calender.png");
-  width : 100%;
+  width: 100%;
   height: 562px;
   background-repeat: no-repeat;
   background-size: cover;
- padding-top:16px;
+  padding-top: 16px;
 }
 
-.box-container-5  .upgrade-btn{
+.box-container-5 .upgrade-btn {
   display: flex;
   justify-content: center;
-  background: linear-gradient(297.28deg, #F66E6E 67.01%, rgba(246, 110, 110, 0) 123.71%);
-filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
-border-radius: 70px;
-padding: 18px 45px;
-gap: 10px;
-font-family: 'Poppins';
-flex: none;
-order: 0;
-flex-grow: 0;
-color: var(--white);
-margin: 33px 30px 47px 30px;
+  background: linear-gradient(
+    297.28deg,
+    #f66e6e 67.01%,
+    rgba(246, 110, 110, 0) 123.71%
+  );
+  filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
+  border-radius: 70px;
+  padding: 18px 18px;
+  font-family: "Poppins";
+  flex: none;
+  flex-grow: 0;
+  color: var(--white);
+  margin: 33px 25px 47px 25px;
 }
 
-
-/* Container Box -6 */
-.box-container-6{
+/* -------------> Container Box-6 <---------- */
+.box-container-6 {
   background: var(--box6);
 }
 
 .box-container-6 .heading {
-  font-family: 'Reptile';
+  font-family: "Reptile";
   font-weight: 700;
   font-size: 40px;
   padding-top: 39px;
   margin: 0px 7px 37px 33px;
 }
-
 
 .box-container-6 .paragraph-text {
   font-family: "Poppins";
@@ -446,52 +445,54 @@ margin: 33px 30px 47px 30px;
   text-align: justify;
 }
 
-/* Image Container */
+/* ----------->Image Container <------------- */
 
 .box-container-6 .image-container {
   background-image: url("images/usman-yousaf.png");
-  width : 100%;
+  width: 100%;
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
- padding-top:16px;
+  padding-top: 16px;
 }
 
-.box-container-6  .upgrade-btn{
+.box-container-6 .upgrade-btn {
   display: flex;
   justify-content: center;
-  background: linear-gradient(297.28deg, #F66E6E 67.01%, rgba(246, 110, 110, 0) 123.71%);
-filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
-border-radius: 70px;
-padding: 18px 45px;
-gap: 10px;
-font-family: 'Poppins';
-flex: none;
-order: 0;
-flex-grow: 0;
-color: var(--white);
-margin: 33px 30px 47px 30px;
+  background: linear-gradient(
+    297.28deg,
+    #f66e6e 67.01%,
+    rgba(246, 110, 110, 0) 123.71%
+  );
+  filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
+  border-radius: 70px;
+  padding: 18px 45px;
+  font-family: "Poppins";
+  flex-grow: 0;
+  color: var(--white);
+  margin: 33px 30px 47px 30px;
 }
 
-.box-container-7{
+.box-container-7 {
   background: var(--box7);
-  padding-bottom:47px;
+  padding-bottom: 47px;
 }
 
-.box-container-7 .heading{
-  font-family: 'Reptile';
-  font-weight: 700;
-  font-size: 40px;
-  padding-top: 39px;
-  margin: 0px 7px 37px 33px;
+.box-container-7 .heading {
+  font-family: "Reptile";
+  font-weight: 600;
+  font-size: 42px;
+  margin: 0px 20px 10px 33px;
+  padding-top: 35px;
 }
-.box-container-7  .image-container{
+
+.box-container-7 .image-container {
   background-image: url("images/gift-box.png");
-  width : 100%;
+  width: 100%;
   height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
- padding-top:16px;
+  padding-top: 16px;
 }
 
 .box-container-7 .paragraph-text {
@@ -504,81 +505,76 @@ margin: 33px 30px 47px 30px;
   padding-bottom: 17px;
   text-align: justify;
 }
-.box-container-7 .upgrade-btn{
+.box-container-7 .upgrade-btn {
   display: flex;
   justify-content: center;
   background: var(--black);
-filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
-border-radius: 70px;
-padding: 18px 35px;
-font-family: 'Poppins';
-flex: none;
-order: 0;
-font-size:18px;
-flex-grow: 0;
-color: var(--white);
-margin: 33px 20px 0px 20px;
+  filter: drop-shadow(0px 2px 6px rgba(255, 22, 64, 0.33));
+  border-radius: 70px;
+  padding: 18px 18px;
+  font-family: "Poppins";
+  flex: none;
+  font-size: 18px;
+  flex-grow: 0;
+  color: var(--white);
+  margin: 33px 20px 0px 20px;
 }
-.box-container-7 .upgrade-btn img{
-width:20px;
-margin-top:0.40em;
-height:15px;
+.box-container-7 .upgrade-btn img {
+  width: 20px;
+  margin-top: 0.4em;
+  height: 15px;
 }
 
-
-/* Box Conatiner -8 */
-.box-container-8{
+/* -------------->Box Conatiner-8 <-------------- */
+.box-container-8 {
   background: var(--box8);
 }
 
 .box-container-8 .light-title {
   font-family: "Reptile";
-  
-  font-weight: 500;
+  font-weight: 550;
   font-size: 42px;
   color: var(--black);
   margin: 0px 30px 0px 30px;
-  padding: 100px 0;
+  padding: 70px 0;
 }
 
-/*----------- Footer ------ */
+/*-----------> Footer <--------- */
 
-footer{
-  background: var(--footer-bg)
+footer {
+  background: var(--footer-bg);
 }
 .social-icon {
   display: flex;
   justify-content: flex-end;
-  gap:15px;
-  margin-right:40px;
+  gap: 15px;
+  margin-right: 40px;
 }
-.social-icon img{
-  font-size:30px;
-  margin-top:40px;
-
+.social-icon img {
+  font-size: 30px;
+  margin-top: 40px;
 }
-
 
 .list-conatiner ul {
-margin: 45px 0px 30px 40px;
+  margin: 45px 0px 30px 40px;
 }
-.list-conatiner ul li{
+.list-conatiner ul li {
   list-style-type: none;
   color: var(--white);
-  font-family: 'DM Sans';
+  font-family: "DM Sans";
 
-font-weight: 400;
-font-size: 25px;
-line-height: 206.5%;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 206.5%;
 }
-.list-conatiner img{
+.list-conatiner img {
   width: 20px;
   height: 15px;
 }
 
-footer .news-para{
-  font-family: 'Poppins';
-  
+footer .news-para {
+  font-family: "Poppins";
+
   font-weight: 300;
   font-size: 18px;
   line-height: 206.5%;
@@ -586,34 +582,36 @@ footer .news-para{
   color: var(--white);
 }
 
-
 footer .draw-underline {
   border: 1px solid var(--white);
   margin: 0 30px;
 }
 
-footer .submit-email{
+footer .submit-email {
   display: flex;
   justify-content: center;
-  gap:10px;
-  padding:1.25em 0px 4em 0px;
+  gap: 15px;
+  padding: 1.25em 0px 4em 0px;
 }
 
-footer .submit-email button ,input {
-padding:0.7em 0.6em;
-border-radius:10px;
+footer .submit-email button,
+input {
+  padding: 0.7em 0.4em;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  font-weight: 550;
 }
-footer .submit-email button{
+footer .submit-email button {
   display: flex;
-  gap:5px;
-  border-radius:30px;
- 
-  outline:none;
-  border:none;
+  gap: 5px;
+  border-radius: 30px;
+  /* margin-left:10px; */
 }
 
 footer .submit-email .active-btn {
   color: var(--black);
-  margin-top: 5px;  
+  margin-top: 2px;
+  font-weight: 550;
+  font-size: 18px;
 }
-
